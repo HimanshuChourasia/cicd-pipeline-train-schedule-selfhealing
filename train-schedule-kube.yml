@@ -34,3 +34,10 @@ spec:
         image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
         ports:
         - containerPort: 8080
+      livenessProbe: 
+       httpGet:
+        port: 8080
+        path: /
+       initialDelaySeconds: 10
+       periodSeconds: 10
+       
