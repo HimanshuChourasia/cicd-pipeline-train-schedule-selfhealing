@@ -43,7 +43,7 @@ pipeline {
  				input 'Deploy container to production ?'
                 milestone label:'container ready for production', ordinal:1
 				kubernetesDeploy( 
-				configs: 'train_schedule_kube.yml', 
+				configs: 'train-schedule-kube.yml', 
 				kubeconfigId: 'kubeconfig',
 				enableConfigSubstitution: true
 				)     			           
