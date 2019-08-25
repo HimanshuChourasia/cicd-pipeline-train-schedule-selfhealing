@@ -1,7 +1,7 @@
 pipeline {
  environment {
     dockerhub_repo = 'himanshuchourasia/train-schedule'
-    dockerhub_credential = 'dockerhub_credentials' 
+    dockerhub_credential = 'dockerhub_creds' 
  }
 
     agent any
